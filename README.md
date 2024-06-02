@@ -1,8 +1,8 @@
-Hello! My name is Pavel and I'm a Python developer from Moscow!
+## Hi there 👋
 
-<img src="https://github.com/d1g-1t/d1g-1t/assets/133741770/80643634-377f-4abd-8ec2-fe3b2a992d8d" width="500" height="500">
+Welcome to my page! I'm glad to see you here.
 
-My stack:
+> "Continuous improvement is better than delayed perfection." - Mark Twain
 
 My stack:
 
