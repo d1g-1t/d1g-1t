@@ -6,10 +6,9 @@ Welcome to my page! I'm glad to see you here.
 
 My stack:
 
-- ![Python](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg) Python
-- ![Django REST Framework](https://www.django-rest-framework.org/img/logo.png) Django REST Framework
-- ![Docker](https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png) Docker
-- ![Nginx](https://upload.wikimedia.org/wikipedia/commons/6/65/Nginx_logo.svg) Nginx
-- ![Gunicorn](https://gunicorn.org/images/logo.jpg) Gunicorn
-- ![GitBash](https://gitforwindows.org/img/git_logo.png) GitBash
-- ![Linux](https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg) Linux
+- ![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=Django) Django 5.0.6
+- ![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-092E20?style=flat-square&logo=Django) Django REST Framework 3.15.1
+- ![Gunicorn](https://img.shields.io/badge/-Gunicorn-000000?style=flat-square&logo=Gunicorn) Gunicorn 20.1.0
+- ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=PostgreSQL) PostgreSQL (psycopg2-binary 2.9.3)
+- ![Nginx](https://img.shields.io/badge/-Nginx-269539?style=flat-square&logo=Nginx) Nginx
+- ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=Docker) Docker
