@@ -4,6 +4,8 @@ Hello! My name is Pavel and I'm a Python developer from Moscow!
 
 My stack:
 
+My stack:
+
 - ![Python](link_to_python_image) Python
 - ![Django REST Framework](link_to_django_rest_framework_image) Django REST Framework
 - ![Docker](link_to_docker_image) Docker
