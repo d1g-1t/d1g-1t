@@ -6,9 +6,9 @@ Welcome to my page! I'm glad to see you here.
 
 My stack:
 
-- ![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=Django) Django
-- ![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-092E20?style=flat-square&logo=Django) Django REST Framework
-- ![Gunicorn](https://img.shields.io/badge/-Gunicorn-000000?style=flat-square&logo=Gunicorn) Gunicorn
-- ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=PostgreSQL) PostgreSQL
-- ![Nginx](https://img.shields.io/badge/-Nginx-269539?style=flat-square&logo=Nginx) Nginx
-- ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=Docker) Docker
+- ![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=Django) **Django**
+- ![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-092E20?style=flat-square&logo=Django) **Django REST Framework**
+- ![Gunicorn](https://img.shields.io/badge/-Gunicorn-000000?style=flat-square&logo=Gunicorn) **Gunicorn**
+- ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=PostgreSQL) **PostgreSQL**
+- ![Nginx](https://img.shields.io/badge/-Nginx-269539?style=flat-square&logo=Nginx) **Nginx**
+- ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=Docker) **Docker**
