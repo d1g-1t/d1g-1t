@@ -1,7 +1,7 @@
-## Hi there 👋
+## Hi there! 👋
 
 <p align="center">
-    <blockquote style="color: crimson;">"Continuous improvement is better than delayed perfection" - Mark Twain</blockquote>
+    <blockquote style="color: crimson; font-size: larger;"><strong>"Continuous improvement is better than delayed perfection." - Mark Twain</strong></blockquote>
 </p>
 
 <p align="center">
