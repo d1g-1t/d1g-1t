@@ -20,7 +20,6 @@
     <a href="#"><img src="https://img.shields.io/badge/-Flower-FF0000?style=flat-square&logo=Flower" alt="Flower"></a>
     <a href="#"><img src="https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=Linux" alt="Linux"></a>
     <a href="#"><img src="https://img.shields.io/badge/-Git%20Bash-000000?style=flat-square&logo=Git" alt="Git Bash"></a>
-    <a href="#"><img src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=Git" alt="Git"></a>
     <a href="#"><img src="https://img.shields.io/badge/-Nginx-269539?style=flat-square&logo=Nginx" alt="Nginx"></a>
     <a href="#"><img src="https://img.shields.io/badge/-Gunicorn-000000?style=flat-square&logo=Gunicorn" alt="Gunicorn"></a>
     <a href="#"><img src="https://img.shields.io/badge/-Traefik-24A1C1?style=flat-square&logo=Traefik" alt="Traefik"></a>
