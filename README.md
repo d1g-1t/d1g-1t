@@ -129,32 +129,61 @@
 
 
 ```python
+from __future__ import annotations
+
 import asyncio
 from dataclasses import dataclass, field
-from typing import Final
+from typing import Final, Literal, TypedDict
 
-MAX_PANIC_LEVEL: Final[int] = 0  # Hard limit, never raised in prod
+import structlog
 
-@dataclass
+logger = structlog.get_logger(__name__)
+
+MAX_PANIC_LEVEL: Final[int] = 0
+
+
+class SolveResult(TypedDict):
+    status: Literal["deployed"]
+    drama: None
+
+
+@dataclass(frozen=True, slots=True)
 class PavelOkhrim:
     role: str = "Python Backend Engineer"
-    stack: list[str] = field(default_factory=lambda: [
-        "FastAPI", "PostgreSQL", "Redis", "Docker", "Camunda"
-    ])
-    hackathon_medals: int = 2        # officially documented
-    panic_in_prod: bool = False      # historically stable
+    stack: tuple[str, ...] = (
+        "FastAPI", "PostgreSQL", "Redis", "Docker", "Camunda",
+    )
+    hackathon_medals: int = 2
+    panic_in_prod: int = 0
 
-    async def solve(self, problem: Exception) -> dict:
+    async def solve(self, problem: Exception) -> SolveResult:
         """
         Complexity: O(calm).
-        Side effects: cleaner codebase, sleeping DevOps team.
+        Side effects: cleaner codebase, sleeping DevOps team —
+        и структурированный лог, чтобы дежурному не пришлось гадать.
         """
-        await asyncio.gather(
-            self._understand_business_value(),
-            self._resist_overengineering(),
-            self._ship_with_tests(),
-        )
+        assert self.panic_in_prod <= MAX_PANIC_LEVEL, "panic budget exceeded"
+        logger.info("incident_received", error=repr(problem))
+
+        try:
+            async with asyncio.TaskGroup() as tg:
+                tg.create_task(self._understand_business_value(problem))
+                tg.create_task(self._resist_overengineering())
+                tg.create_task(self._ship_with_tests())
+        except* Exception:
+            logger.exception("solve_failed", error=repr(problem))
+            raise
+
         return {"status": "deployed", "drama": None}
+
+    async def _understand_business_value(self, problem: Exception) -> None:
+        logger.debug("clarifying_business_value", cause=str(problem))
+
+    async def _resist_overengineering(self) -> None:
+        logger.debug("keeping_it_boring")
+
+    async def _ship_with_tests(self) -> None:
+        logger.debug("running_test_suite")
 
     def __repr__(self) -> str:
         return "<Backend that doesn't wake you up at 3 AM>"
